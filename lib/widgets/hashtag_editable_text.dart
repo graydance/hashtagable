@@ -218,6 +218,7 @@ class HashTagEditableTextState extends EditableTextState {
       return widget.controller.buildTextSpan(
         style: widget.style,
         withComposing: !widget.readOnly,
+        context: context,
       );
     }
     return composer.getComposedTextSpan();
